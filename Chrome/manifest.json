@@ -1,0 +1,21 @@
+{
+    "name": "Show YouTube Likes",
+    "description": "Gets rid of the abreviated like count on the video pages",
+    "manifest_version": 3,
+    "version": "1.0",
+    "icons": {
+        "16": "icon.png",
+        "32": "icon.png",
+        "128": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                "main.min.js"
+            ],
+            "matches": [
+                "*://*.youtube.com/*"
+            ]
+        }
+    ]
+}
