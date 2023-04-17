@@ -1,11 +1,11 @@
 // ==UserScript==
-// @name         
-// @namespace    
+// @name         Show YouTube Likes
+// @namespace    https://github.com/GalvinPython/show-youtube-likes
 // @version      1.0
 // @description  Shows the full like count on YouTube pages
 // @author       GalvinPython
 // @match        *://*.youtube.com/*
-// @icon         
+// @icon         https://raw.githubusercontent.com/GalvinPython/show-youtube-likes/main/Chrome/icon.png
 // @run-at document-start
 // @grant        none
 // ==/UserScript==
