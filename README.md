@@ -7,11 +7,14 @@ YouTube will frequently do A/B testing, and thus the layout may change, affectin
 
 # Supported Areas
 * Current:
- * Main video page
+  * Main video page
 * Potentially:
- * YouTube Music
- * YouTube Community Posts
- * Comments (this is on the backburner. I can't imagine how painful this'd be)
+  * YouTube Music (still investigating)
+* Can't do:
+  * YouTube Community Posts
+    * No unabbreviated value found
+  * Comments (this is on the backburner. I can't imagine how painful this'd be)
+     * No unabbreviated value found
 
 # Supported Browsers
 This extension has been tested on the following:
