@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Show YouTube Likes
 // @namespace    https://github.com/GalvinPython/show-youtube-likes
-// @version      1.0
+// @version      1.0.2
 // @description  Shows the full like count on YouTube pages
 // @author       GalvinPython
 // @match        *://*.youtube.com/*
@@ -43,7 +43,7 @@ function showLikes() {
     
     // Step 3 - Update the like count
     const button = document.querySelector('.yt-spec-button-shape-next--segmented-start');
-    const div = button.querySelector('.cbox.yt-spec-button-shape-next--button-text-content');
+    const div = button.querySelector('.cbox.yt-spec-button-shape-next__button-text-content');
     const span = div.querySelector('.yt-core-attributed-string.yt-core-attributed-string--white-space-no-wrap');
     span.innerHTML = trueCount;
 }
