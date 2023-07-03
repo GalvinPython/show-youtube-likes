@@ -49,7 +49,7 @@ function showLikes() {
 // At the current moment it refreshes every 3 seconds to give the script enough to update properly
 setInterval(function() {
     let currentURL = window.location.href;
-    if (!(currentURL.includes('watch'))) {
+    if (!(currentURL.includes('watch') || currentURL.includes('clip'))) {
         return;
     }
     checkElementExists()
