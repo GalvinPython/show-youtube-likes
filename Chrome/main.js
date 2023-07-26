@@ -7,8 +7,6 @@
  */
 
 const targetEl = document.getElementsByClassName("yt-spec-button-shape-next yt-spec-button-shape-next--tonal yt-spec-button-shape-next--mono yt-spec-button-shape-next--size-m yt-spec-button-shape-next--icon-leading yt-spec-button-shape-next--segmented-start")
-let prevURL = '';
-let hasUpdated = false;
 
 function checkElementExists() {
     if (targetEl.length !== 0) {
@@ -27,7 +25,8 @@ function showLikes() {
     // Step 2 - Split aria label so we get know the true number of like.
     // The 6th index should always be the target value if the video isn't liked
     // But if the video is liked, we should get the first value
-    let trueCount = '';
+    let trueCount;
+    if (targetAriaValue == "I like this") return
     const targetIndex = targetAriaValue.split(" ")
     if (targetIndex[5]) {
         trueCount = targetIndex[5]

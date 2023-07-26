@@ -1,4 +1,10 @@
 ### Changelog
+#### 1.0.4
+* Fix bug on videos that had the like counter disabled
+  * Previously, the counter would be shown as **I** from the phrase **I like this**
+  * Now it just says **Like**
+* Remove code from abandoned ideas
+
 #### 1.0.3
 * Extension wouldn't work on clips, so it's been updated to support this
 
