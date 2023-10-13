@@ -3,8 +3,6 @@
  * This isn't a "test" file, this just includes the main file,
  * but with logging to make it easier to spot issues.
  * idk maybe do development here  ¯\_(ツ)_/¯
- * 
- * main.min.js should be the shipped file
 */
 
 const targetEl = document.getElementsByClassName("yt-spec-button-shape-next yt-spec-button-shape-next--tonal yt-spec-button-shape-next--mono yt-spec-button-shape-next--size-m yt-spec-button-shape-next--icon-leading yt-spec-button-shape-next--segmented-start")
@@ -43,8 +41,7 @@ function showLikes() {
     
     // Step 3 - Update the like count
     const button = document.querySelector('.yt-spec-button-shape-next--segmented-start');
-    const div = button.querySelector('.cbox.yt-spec-button-shape-next__button-text-content');
-    const span = div.querySelector('.yt-core-attributed-string.yt-core-attributed-string--white-space-no-wrap');
+    const span = button.getElementsByClassName('yt-core-attributed-string yt-core-attributed-string--white-space-no-wrap')[0];
     span.innerHTML = trueCount;
 }
 

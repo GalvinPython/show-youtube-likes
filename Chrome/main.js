@@ -21,7 +21,7 @@ function checkElementExists() {
 function showLikes() {
     // Step 1 - Get aria label
     const targetAriaValue = targetEl[0].ariaLabel
-    
+        
     // Step 2 - Split aria label so we get know the true number of like.
     // The 6th index should always be the target value if the video isn't liked
     // But if the video is liked, we should get the first value
@@ -38,8 +38,7 @@ function showLikes() {
     
     // Step 3 - Update the like count
     const button = document.querySelector('.yt-spec-button-shape-next--segmented-start');
-    const div = button.querySelector('.cbox.yt-spec-button-shape-next__button-text-content');
-    const span = div.querySelector('.yt-core-attributed-string.yt-core-attributed-string--white-space-no-wrap');
+    const span = button.getElementsByClassName('yt-core-attributed-string yt-core-attributed-string--white-space-no-wrap')[0];
     span.innerHTML = trueCount;
 }
 
