@@ -1,3 +1,6 @@
+# Archived
+This project has now been archived and will no longer be recieving updates due to the latest YouTube update (though this was like ~October/November) being too much for me to work and focus on.
+
 # Show YouTube Likes Extension
 Show YouTube Likes is an extension for web browsers that displays the **full like count of a YouTube video**, instead of it being rounded to a million, or thousand etc.  
 ![A picture showing the difference on a video without the extension and with the extension](https://raw.githubusercontent.com/GalvinPython/show-youtube-likes/main/.github/readme/1-BeforeAfter.jpg "Before/After image")
